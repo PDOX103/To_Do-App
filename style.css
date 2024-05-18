@@ -55,6 +55,40 @@ h1 {
     margin: 0;
 }
 
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '✔';
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+button i {
+    font-size: 1.2em;
+}
+
+button:hover i {
+    color: #d6d3d3;
+}
+
+
 #task-list li {
     display: flex;
     justify-content: space-between;

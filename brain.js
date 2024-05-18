@@ -35,14 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
+        deleteButton.innerHTML = '<i class="fas fa-trash-alt"></i>';
         deleteButton.addEventListener('click', () => {
             taskList.removeChild(li);
             saveTasks();
         });
 
         const editButton = document.createElement('button');
-        editButton.textContent = 'Edit';
+        editButton.innerHTML = '<i class="fas fa-edit"></i>';
         editButton.addEventListener('click', () => {
             const newTaskText = prompt('Edit your task', taskSpan.textContent);
             if (newTaskText !== null) {
