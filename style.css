@@ -38,14 +38,15 @@ h1 {
     padding: 15px;
     margin-left: 10px;
     border: none;
-    background-color: #4248fa;
+    background-color: #000000;
     color: white;
     border-radius: 50px;
     cursor: pointer;
 }
 
 #add-task:hover {
-    background-color: #191fcf;
+    background-color: #d6d3d3;
+    color: rgb(0, 0, 0);
 }
 
 #task-list {
@@ -58,20 +59,20 @@ h1 {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid white;
+    border-radius: 200px;
     margin-bottom: 10px;
 }
 
 .task-completed {
     text-decoration: line-through;
-    color: #888;
+    color: #b00606;
 }
 
 #clear-tasks {
     padding: 10px;
     border: none;
-    background-color: #4248fa;
+    background-color: #000000;
     color: white;
     border-radius: 20px;
     cursor: pointer;
@@ -79,5 +80,6 @@ h1 {
 }
 
 #clear-tasks:hover {
-    background-color: #191fcf;
+    background-color: #d6d3d3;
+    color: rgb(0, 0, 0);
 }
